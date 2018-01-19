@@ -1,3 +1,32 @@
-<p>
-  animal-list works!
-</p>
+<h2>List of Animals</h2>
+<div *ngFor="let animal of childAnimals">
+  <h3>{{animal.species}}</h3>
+  <div class="meta">
+    <span>Name:</span> {{animal.name}}
+  </div>
+  <div [class]="ageColor(animal)" class="meta">
+    <span>Age:</span> {{animal.age}}
+  </div>
+  <div class="meta">
+    <span>Diet</span> {{animal.diet}}
+  </div><div class="meta">
+    <span>location:</span> {{animal.location}}
+  </div><div class="meta">
+    <span>Name:</span> {{animal.name}}
+  </div>
+  <div class="meta">
+    <span>caretakers:</span> {{animal.caretakers}}
+  </div>
+  <div class="meta">
+    <span>sex:</span> {{animal.sex}}
+  </div>
+  <div class="meta">
+    <span>likes:</span> {{animal.likes}}
+  </div>
+  <div class="meta">
+    <span>dislikes:</span> {{animal.dislikes}}
+  </div>
+
+
+    <button (click)="editClicked(animal)" type="button" name="button">edit</button>
+</div>
