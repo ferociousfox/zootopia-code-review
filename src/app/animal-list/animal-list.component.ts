@@ -13,17 +13,15 @@ export class AnimalListComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  filterByAge: string = "all animals";
+
+  onChange(ageOption) {
+    this.filterByAge = ageOption;
+  }
+
   editClicked(whichAnimal: Animal){
-    console.log(whichAnimal);
     this.clickSender.emit(whichAnimal);
   }
-  ageColor(animal){
-    if (animal.age >= 10) {
-      return "oldy"
-    } else if (animal.age <= 2) {
-      return "baby"
-    } else {
-      return "normie"
-    }
-  }
+
 }

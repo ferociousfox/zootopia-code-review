@@ -19,7 +19,6 @@ export class AnimalNewComponent implements OnInit {
 
   submitForm(species, name, age, diet, location, caretakers, sex, likes, dislikes){
     let newAnimalToAdd: Animal = new Animal(species, name, age, diet, location, caretakers, sex, likes, dislikes);
-    console.log(newAnimalToAdd);
     this.sendNew.emit(newAnimalToAdd);
   }
 
