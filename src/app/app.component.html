@@ -3,4 +3,6 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <app-animal-list [childAnimals]="masterAnimals"></app-animal-list>
+  <app-animal-list [childAnimals]="masterAnimals" (clickSender)="editAnimal($event)"></app-animal-list>
+  <app-animal-new (sendNew)="newAnimal($event)"></app-animal-new>
+  <app-animal-edit [childSelectedAnimal]="selectedAnimal" *ngIf="selectedAnimal" (resetSend)="saveAnimal()"></app-animal-edit>

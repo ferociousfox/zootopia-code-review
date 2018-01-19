@@ -14,6 +14,7 @@ export class AnimalListComponent implements OnInit {
   ngOnInit() {
   }
   editClicked(whichAnimal: Animal){
+    console.log(whichAnimal);
     this.clickSender.emit(whichAnimal);
   }
   ageColor(animal){

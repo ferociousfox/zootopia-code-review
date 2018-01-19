@@ -1,3 +1,13 @@
-<p>
-  animal-new works!
-</p>
+<div class="new-animal">
+  <h3>Register a New Animal</h3>
+  <input  #newSpecies placeholder="Species" type="text">
+  <input  #newName placeholder="Name" type="text">
+  <input  #newAge placeholder="Age" type="number">
+  <input  #newDiet placeholder="Diet" type="text">
+  <input  #newLocation placeholder="Location" type="text">
+  <input  #newCaretakers placeholder="Caretakers" type="number">
+  <input  #newSex placeholder="Sex" type="text">
+  <input  #newLikes placeholder="Likes" type="text">
+  <input  #newDislikes placeholder="Dislikes" type="text">
+  <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)"type="button" name="button">Submit</button>
+</div>

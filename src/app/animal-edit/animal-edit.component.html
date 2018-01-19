@@ -1,3 +1,10 @@
-<p>
-  animal-edit works!
-</p>
+<input type="text" [(ngModel)]="childSelectedAnimal.species" placeholder="Species">
+<input type="text" [(ngModel)]="childSelectedAnimal.name" placeholder="Name">
+<input type="number" [(ngModel)]="childSelectedAnimal.age" placeholder="Age">
+<input type="text" [(ngModel)]="childSelectedAnimal.diet" placeholder="Diet">
+<input type="text" [(ngModel)]="childSelectedAnimal.location" placeholder="Location">
+<input type="number" [(ngModel)]="childSelectedAnimal.caretakers" placeholder="Caretakers">
+<input type="text" [(ngModel)]="childSelectedAnimal.sex" placeholder="Sex">
+<input type="text" [(ngModel)]="childSelectedAnimal.likes" placeholder="Likes">
+<input type="text" [(ngModel)]="childSelectedAnimal.dislikes" placeholder="Dislikes">
+<button type="button" name="button" (click)="saveAnimalClicked()">Save</button>

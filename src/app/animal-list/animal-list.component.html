@@ -11,9 +11,6 @@
     <span>Diet</span> {{animal.diet}}
   </div><div class="meta">
     <span>location:</span> {{animal.location}}
-  </div><div class="meta">
-    <span>Name:</span> {{animal.name}}
-  </div>
   <div class="meta">
     <span>caretakers:</span> {{animal.caretakers}}
   </div>
@@ -26,7 +23,6 @@
   <div class="meta">
     <span>dislikes:</span> {{animal.dislikes}}
   </div>
-
-
-    <button (click)="editClicked(animal)" type="button" name="button">edit</button>
+  <button (click)="editClicked(animal)" type="button" name="button">edit</button>
+  <app-animal-edit [childSelectedAnimal]="selectedAnimal" *ngIf="selectedAnimal === animal"></app-animal-edit>
 </div>
