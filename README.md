@@ -1,27 +1,51 @@
-# Zootopia
+# _Zoo-list_
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### _an app to keep track of animals in a zoo_
 
-## Development server
+#### _by Shane Ryan_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+_a user interface that will list and track animals_
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## _Specifications_
 
-## Build
+  * _user should be able to add and edit animals to the list_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+  * _the user can filter displayed animals by age_
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Set up/Installation requirements
 
-## Further help
+  * _open the terminal_
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  * _cd into your desktop folder_
+
+  * _type: git clone https://github.com/ferociousfox/zootopia-code-review into the prompt_
+
+  * _next run these commands: npm install, and ng serve --open
+
+  * _the ng serve --open command will launch a chrome browser_
+
+  * _follow the prompts_
+
+  * _click the buttons_
+
+
+
+### Known bugs
+
+ _none at this time_
+
+#### contact: onyx.shane@gmail.com
+
+## Technologies used
+
+_html node.js npm bower javascript api calls and jquery-3_
+
+### License
+
+*copyright (c) shane ryan
+Licensed under MIT license
